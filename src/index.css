@@ -141,4 +141,32 @@ All colors MUST be HSL.
   }
   .shadow-elevated { box-shadow: var(--shadow-elevated); }
   .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  /* Interactive utilities */
+  .story-link {
+    position: relative;
+    display: inline-block;
+  }
+  .story-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: hsl(var(--primary));
+    transform-origin: bottom right;
+    transition: transform 300ms ease;
+  }
+  .story-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hover-scale { transition: transform 200ms ease; }
+  .hover-scale:hover { transform: scale(1.05); }
+
+  .pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
 }
+

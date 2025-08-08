@@ -2,7 +2,7 @@ type Props = { value: string; onChange: (v: string) => void };
 
 const SearchBar = ({ value, onChange }: Props) => {
   return (
-    <div className="w-full max-w-xl">
+    <div className="w-full max-w-xl animate-scale-in">
       <label className="sr-only" htmlFor="search">Search products</label>
       <input
         id="search"

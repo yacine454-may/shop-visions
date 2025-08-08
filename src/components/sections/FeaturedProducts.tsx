@@ -3,7 +3,7 @@ import ProductCard from "../shop/ProductCard";
 
 const FeaturedProducts = ({ products, onAdd }: { products: Product[]; onAdd: (p: Product) => void }) => {
   return (
-    <section id="products" className="container py-16">
+    <section id="products" className="container py-16 animate-fade-in">
       <header className="flex items-center justify-between mb-8">
         <h2>Featured products</h2>
       </header>

@@ -16,9 +16,9 @@ export const Header = ({ onOpenCart }: { onOpenCart: () => void }) => {
           <span className="text-lg font-semibold">NovaShop</span>
         </Link>
         <div className="flex items-center gap-6">
-          <Link to="#products" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Products</Link>
-          <Link to="#categories" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Categories</Link>
-          <Link to="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
+          <Link to="#products" className="story-link text-sm text-muted-foreground hover:text-foreground transition-colors">Products</Link>
+          <Link to="#categories" className="story-link text-sm text-muted-foreground hover:text-foreground transition-colors">Categories</Link>
+          <Link to="#about" className="story-link text-sm text-muted-foreground hover:text-foreground transition-colors">About</Link>
         </div>
         <div className="flex items-center gap-3">
           <Button variant="outline" asChild>
@@ -28,7 +28,7 @@ export const Header = ({ onOpenCart }: { onOpenCart: () => void }) => {
             <ShoppingCart />
             <span className="sr-only">Open cart</span>
             {count > 0 && (
-              <span className="ml-1 inline-flex items-center justify-center text-xs font-medium px-1.5 py-0.5 rounded-md bg-brand text-brand-foreground">
+              <span className="ml-1 inline-flex items-center justify-center text-xs font-medium px-1.5 py-0.5 rounded-md bg-brand text-brand-foreground pulse">
                 {count}
               </span>
             )}

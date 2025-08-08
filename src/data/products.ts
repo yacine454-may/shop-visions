@@ -24,6 +24,9 @@ export const categories = [
   "Keyboards",
 ] as const;
 
+// To add more products, append items to the products array below.
+// Example:
+// { id: 'p7', name: 'New Product', price: 9900, category: 'Accessories', image: sunglasses, alt: 'New product description' },
 export const products: Product[] = [
   {
     id: "p1",

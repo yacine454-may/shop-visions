@@ -7,7 +7,7 @@ const fmt = (cents: number) => new Intl.NumberFormat(undefined, { style: "curren
 
 const ProductCard = ({ product, onAdd }: Props) => {
   return (
-    <article className="group rounded-lg border border-border p-3 transition-transform hover:-translate-y-0.5 hover:shadow-elevated">
+    <article className="group rounded-lg border border-border p-3 transition-transform hover:-translate-y-0.5 hover:shadow-elevated hover-scale animate-fade-in">
       <div className="aspect-square overflow-hidden rounded-md bg-muted">
         <img
           src={product.image}

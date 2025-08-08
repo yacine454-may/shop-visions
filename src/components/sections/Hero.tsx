@@ -19,8 +19,8 @@ const Hero = () => {
       />
       <div className="relative container py-24 md:py-32 lg:py-40">
         <div className="max-w-3xl">
-          <h1 className="mb-6">Your next favorite product is here</h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-10">
+          <h1 className="mb-6 animate-fade-in">Your next favorite product is here</h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 animate-fade-in">
             Discover premium, minimalist essentials crafted for everyday performance. Designed with precision, delivered with care.
           </p>
           <div className="flex items-center gap-3">
